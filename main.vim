@@ -1,91 +1,20 @@
 " Install and manage the plugins.
-source ./plugins.vim
+source <sfile>:p:h/plugins.vim
 
 " Regular settings.
-source ./regular.vim
+source <sfile>:p:h/regular.vim
 
 " Language-specific settings and mappings.
-source ./languages.vim
+source <sfile>:p:h/languages.vim
 
 " Global mappings
-source ./global-mappings.vim
+source <sfile>:p:h/global-mappings.vim
 
-" indentLine settings.
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '·'
-let g:indentLine_fileTypeExclude = ['tex']
-" Prevents characters from being concealed, like double quotes in json, at the
-" cost of the package becoming useless.
-"let g:indentLine_setConceal = 0
-" Sets in which modes conceal can take effect even if the cursor is on that
-" line/region.
-"let g:indentLine_concealcursor = 'inc'
-
-" pydiction settings.
-"let g:pydiction_location = '~/.vim/plugged/pydiction/complete-dict'
-"let g:pydiction_menu_height = 3
-
-" vimtex settings.
-let g:tex_flavor = 'latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode = 0
-"let g:tex_conceal = ''
-"let g:tex_syntax_conceal_default = 0
-"let g:vimtex_quickfix_autoclose_after_keystrokes = 1
+" Plugin config
+source <sfile>:p:h/plugin-settings/plugin-settings-main.vim
 
 " jedi-vim settings.
 autocmd FileType python setlocal completeopt-=preview
-
-" vim-airline settings.
-let g:airline#extensions#tmuxline#enabled = 0
-let g:tmuxline_preset = 'Custom_powerline'
-fun! Custom_powerline()
-  let bar = tmuxline#new()
-
-  call bar.left.add('a', '#S')
-  call bar.left.add_left_sep()
-
-  call bar.right.add_right_sep()
-  call bar.right.add('x', '%a')
-
-  call bar.right.add_right_sep()
-  call bar.right.add('y', '%Y-%m-%d')
-  call bar.right.add_right_alt_sep()
-  call bar.right.add('y', '%H:%M')
-  call bar.right.add_right_sep()
-
-  call bar.right.add('z', '#H')
-
-  call bar.win.add('win.dim', '#I')
-  call bar.win.add_left_alt_sep()
-  call bar.win.add('win', '#W#F')
-
-  call bar.cwin.add_left_sep()
-  call bar.cwin.add('cwin.dim', '#I')
-  call bar.cwin.add_left_alt_sep()
-  call bar.cwin.add('cwin', '#W#F')
-  call bar.cwin.add_left_sep()
-
-  let bar.options['status-justify'] = 'left'
-  let bar.win_options['window-status-activity-style'] = 'none'
-
-  return bar
-endfun
-command TmuxlineSave TmuxlineSnapshot! ~/.code_stuff/.tmuxline
-" if exists('$TMUX')
-" 	autocmd InsertEnter * Tmuxline airline_insert
-" 	autocmd InsertLeave * Tmuxline airline
-"     autocmd UILeave * Tmuxline
-" endif
-"let g:promptline_theme = 'airline'
-let g:promptline_preset = {
-        \'a' : [ promptline#slices#host(), promptline#slices#user() ],
-        \'b' : [ promptline#slices#cwd({'dir_limit': 4}) ],
-        \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
-        \'z' : [ promptline#slices#python_virtualenv() ],
-        \'warn' : [ promptline#slices#last_exit_code() ],
-        \'options': {'newline': 1}}
-command PromptlineSave PromptlineSnapshot! ~/.code_stuff/.promptline.sh
 
 " pymode settings.
 "let g:pymode_rope_completion = 0
