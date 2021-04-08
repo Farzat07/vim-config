@@ -1,4 +1,4 @@
-" promptline.vim settings
+" promptline.vim settings.
 
 "let g:promptline_theme = 'airline'
 let g:promptline_preset = {

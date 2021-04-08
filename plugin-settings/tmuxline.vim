@@ -1,4 +1,4 @@
-" tmuxline.vim settings
+" tmuxline.vim settings.
 
 let g:tmuxline_preset = 'Custom_powerline'
 fun! Custom_powerline()
