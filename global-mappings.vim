@@ -1,8 +1,3 @@
-" Find and replace trailing whitespace.
-nnoremap <Leader>ll :set list!<CR>
-nnoremap <Leader>ls /\s\+\%#\@<!$/<CR>
-nnoremap <Leader>lr :%s/\s\+\%#\@<!$//g<CR>
-
 " Windows navigation.
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
