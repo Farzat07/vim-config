@@ -1,4 +1,5 @@
 " Python settings.
+let g:python3_host_prog = '/usr/bin/python3'
 autocmd FileType python
             \ command-buffer Run !chmod +x %:p:S; %:p:S
 autocmd FileType python

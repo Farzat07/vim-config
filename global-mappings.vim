@@ -5,7 +5,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Mkdir for the current file.
-command! MkCurDir :!mkdir %:p:h:S -p
+command! MkCurDir :!mkdir %:h:S -p
 
 " Reload settings.
 command! Source :source ~/.vimrc
