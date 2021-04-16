@@ -37,6 +37,7 @@ Plug 'https://github.com/sophacles/vim-processing' " For processing.org
 Plug 'https://github.com/suy/vim-context-commentstring' " Vim plugin that sets the value of ‘commentstring’ to a different value depending on the region of the file you are in.
 Plug 'https://github.com/alvan/vim-closetag' " Auto close (X)HTML tags.
 Plug 'https://github.com/dylanaraps/wal.vim' " Generate and change colorschemes on the fly.
+Plug 'https://github.com/dkprice/vim-easygrep' " Fast and Easy Find and Replace Across Multiple Files.
 Plug 'https://github.com/lambdalisue/suda.vim' " An alternative sudo.vim for Vim and Neovim, limited support sudo in Windows.
 Plug 'https://github.com/Farzat07/vim-better-whitespace', { 'branch': 'detectWhitelines' } " Better whitespace highlighting for Vim.
 Plug 'https://github.com/heavenshell/vim-jsdoc', {
