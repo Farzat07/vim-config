@@ -27,6 +27,7 @@ set scrolloff=5
 
 " Turn on line numbering.
 set number
+set relativenumber
 
 " Turn on auto and smart indenting.
 "set autoindent
@@ -69,8 +70,8 @@ set encoding=utf-8
 set fileformat=unix
 
 " Save swap files in the same directory as the edited file.
-set directory=.
-set backupdir=.
+set directory=~/.vim/swap,/var/tmp
+set backupdir=.,~/.vim/backup,/tmp
 
 " Enable plugins to be loaded based on file type.
 filetype plugin on
