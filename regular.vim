@@ -7,20 +7,11 @@ set hidden
 " Highlight search results, turned off for a search by :noh.
 set hlsearch
 
-" Highlight matches while searching.
-set incsearch
-
-" Show the cursor position.
-set ruler
-
 " Show incomplete commands in the bottom of normal mode.
 set showcmd
 
 " Only add a single space after '.' etc.
 set nojoinspaces
-
-" Show a menu when using tab completion.
-set wildmenu
 
 " Leave 5 lines above/below when scrolling.
 set scrolloff=5
@@ -28,10 +19,6 @@ set scrolloff=5
 " Turn on line numbering.
 set number
 set relativenumber
-
-" Turn on auto and smart indenting.
-"set autoindent
-"set smartindent
 
 " Set background colour.
 set background=dark
@@ -44,9 +31,6 @@ highlight Conceal ctermbg=none
 
 " Enable syntax highlighting.
 syntax enable
-
-" Auto-update files on change.
-set autoread
 
 " Wrap text.
 set wrap
@@ -62,9 +46,6 @@ set tabstop=4
 set shiftwidth=0
 set softtabstop=-1
 set expandtab
-
-" Set encoding to UTF-8.
-set encoding=utf-8
 
 " Format files linux style.
 set fileformat=unix
