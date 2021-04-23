@@ -29,6 +29,7 @@ Plug 'https://github.com/Farzat07/promptline.vim', { 'branch': 'develop' } " Gen
 "Plug 'https://github.com/vim-syntastic/syntastic' " Syntax checking hacks for vim.
 Plug 'https://github.com/mhinz/vim-signify' " Show a diff using Vim its sign column.
 Plug 'https://github.com/tpope/vim-fugitive' " A Git wrapper so awesome, it should be illegal.
+Plug 'https://github.com/tpope/vim-obsession' " Continuously updated session files.
 Plug 'https://github.com/tpope/vim-scriptease' " A Vim plugin for Vim plugins.
 Plug 'https://github.com/tpope/vim-sensible' " Defaults everyone can agree on.
 Plug 'https://github.com/tpope/vim-surround' " surround.vim: quoting/parenthesizing made simple
