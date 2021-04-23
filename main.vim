@@ -1,3 +1,6 @@
+" Some settings need to be made before loading the plugins.
+source <sfile>:p:h/early-settings/early-settings-main.vim
+
 " Install and manage the plugins.
 source <sfile>:p:h/plugins.vim
 
