@@ -20,6 +20,7 @@ source <sfile>:p:h/plugin-settings/plugin-settings-main.vim
 let g:user_emmet_expandabbr_key = '<C-y>y'
 
 " UltiSnips settings.
+let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit = expand('<sfile>:p:h') . '/UltiSnips'
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-w>"
 let g:UltiSnipsJumpBackwardTrigger="<c-q>"
