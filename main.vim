@@ -26,6 +26,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-q>"
 let g:UltiSnipsListSnippets="<c-h>"
 
 " Coc.nvim settings.
+let g:coc_config_home = expand('<sfile>:p:h')
 let g:coc_global_extensions = [
             \'coc-snippets',
             \'coc-ultisnips',
