@@ -2,7 +2,6 @@ source <sfile>:p:h/ale.vim
 source <sfile>:p:h/indentLine.vim
 source <sfile>:p:h/jedi-vim.vim
 source <sfile>:p:h/nvim-miniyank.vim
-source <sfile>:p:h/promptline.vim
 source <sfile>:p:h/syntastic.vim
 source <sfile>:p:h/tmuxline.vim
 source <sfile>:p:h/vim-airline.vim
