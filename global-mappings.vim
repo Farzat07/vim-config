@@ -5,10 +5,16 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Mkdir for the current file.
-command! MkCurDir :!mkdir %:h:S -p
+try
+    command MkCurDir :!mkdir %:h:S -p
+catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
+endtry
 
 " Reload settings.
-command! Source :source ~/.vimrc
+try
+    command Source :source ~/.vimrc
+catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
+endtry
 
 " Coc shorcuts.
 nmap <silent> <Leader>d <Plug>(coc-definition)
