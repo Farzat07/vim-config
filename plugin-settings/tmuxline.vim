@@ -33,9 +33,8 @@ fun! Custom_powerline()
 
   return bar
 endfun
-command TmuxlineSave TmuxlineSnapshot! ~/.code_stuff/.tmuxline
-" if exists('$TMUX')
-" 	autocmd InsertEnter * Tmuxline airline_insert
-" 	autocmd InsertLeave * Tmuxline airline
-"     autocmd UILeave * Tmuxline
-" endif
+
+try
+    command TmuxlineSave TmuxlineSnapshot! ~/.dotfiles/tmux/.tmuxline
+catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
+endtry
