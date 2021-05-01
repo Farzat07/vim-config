@@ -17,15 +17,9 @@ Plug 'https://github.com/sheerun/vim-polyglot' " A solid language pack for Vim.
 Plug 'https://github.com/dense-analysis/ale' " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'} " Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode.
 Plug 'https://github.com/Vimjas/vim-python-pep8-indent' " A nicer Python indentation style for vim.
-"Plug 'https://github.com/guns/xterm-color-table.vim' " For info on Vim's colours.
-"Plug 'https://github.com/rkulla/pydiction' " Python Tab-completion for Vim.
 Plug 'https://github.com/vim-airline/vim-airline' " Lean & mean status/tabline for vim that's light as air.
 Plug 'https://github.com/vim-airline/vim-airline-themes' " A collection of themes for vim-airline.
 Plug 'https://github.com/Farzat07/tmuxline.vim' " Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
-"Plug 'https://github.com/davidhalter/jedi-vim' "  Using the jedi autocompletion library for VIM.
-"Plug 'https://github.com/mbbill/echofunc' " Display c/c++ function declaration in vim command/status line.
-"Plug 'https://github.com/python-mode/python-mode', { 'for': 'python', 'branch': 'develop' } " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
-"Plug 'https://github.com/vim-syntastic/syntastic' " Syntax checking hacks for vim.
 Plug 'https://github.com/mhinz/vim-signify' " Show a diff using Vim its sign column.
 Plug 'https://github.com/tpope/vim-fugitive' " A Git wrapper so awesome, it should be illegal.
 Plug 'https://github.com/tpope/vim-obsession' " Continuously updated session files.
