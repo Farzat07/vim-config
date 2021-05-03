@@ -16,6 +16,14 @@ try
 catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
 endtry
 
+" Restore the original cursor colour.
+" http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.7.pod
+" See #XTerm_Operating_System_Commands in the above url for more info.
+try
+    command ResetMouse :!printf '%b' '\e]12'
+catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
+endtry
+
 " Coc shorcuts.
 nmap <silent> <Leader>d <Plug>(coc-definition)
 nmap <silent> <Leader>k :call CocAction('doHover')<CR>
