@@ -9,7 +9,3 @@ let g:indentLine_fileTypeExclude = ['tex']
 " Sets in which modes conceal can take effect even if the cursor is on that
 " line/region.
 "let g:indentLine_concealcursor = 'inc'
-
-" pydiction settings.
-"let g:pydiction_location = '~/.vim/plugged/pydiction/complete-dict'
-"let g:pydiction_menu_height = 3

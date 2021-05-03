@@ -12,7 +12,7 @@ endtry
 
 " Reload settings.
 try
-    command Source :source ~/.vimrc
+    command Source :source $MYVIMRC
 catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
 endtry
 

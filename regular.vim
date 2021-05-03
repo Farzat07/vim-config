@@ -51,8 +51,8 @@ set expandtab
 set fileformat=unix
 
 " Save swap files in the same directory as the edited file.
-set directory=.,~/.vim/swap,/var/tmp
-set backupdir=.,~/.vim/backup,/tmp
+set directory=.,$MyVimRuntime/swap,/var/tmp
+set backupdir=.,$MyVimRuntime/backup,/tmp
 
 " Enable plugins to be loaded based on file type.
 filetype plugin on
