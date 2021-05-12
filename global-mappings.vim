@@ -10,6 +10,12 @@ try
 catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
 endtry
 
+" Copy the last used register to the clipboard.
+try
+    command Clipboard :let @+ = getreg('"')
+catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
+endtry
+
 " Reload settings.
 try
     command Source :source $MYVIMRC

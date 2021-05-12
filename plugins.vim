@@ -1,9 +1,9 @@
 " Project https://github.com/junegunn/vim-plug.
 " Auto-install "vim-plug" if not yet installed.
 if empty(glob($MyVimRuntime . '/autoload/plug.vim'))
-  silent !curl -fLo $MyVimRuntime/autoload/plug.vim --create-dirs
-              \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    silent !curl -fLo $MyVimRuntime/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " Specify a directory for plugins.
@@ -37,9 +37,9 @@ Plug 'https://github.com/dkprice/vim-easygrep' " Fast and Easy Find and Replace 
 Plug 'https://github.com/lambdalisue/suda.vim' " An alternative sudo.vim for Vim and Neovim, limited support sudo in Windows.
 Plug 'https://github.com/Farzat07/vim-better-whitespace', { 'branch': 'detectWhitelines' } " Better whitespace highlighting for Vim.
 Plug 'https://github.com/heavenshell/vim-jsdoc', {
-  \ 'for': ['javascript', 'javascript.jsx','typescript'],
-  \ 'do': 'make install'
-\} " Generate JSDoc to your JavaScript code.
+            \ 'for': ['javascript', 'javascript.jsx','typescript'],
+            \ 'do': 'make install'
+            \} " Generate JSDoc to your JavaScript code.
 Plug 'https://github.com/SirVer/ultisnips' " UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
 Plug 'https://github.com/mattn/emmet-vim' " emmet for vim: http://emmet.io/.
 Plug 'https://github.com/honza/vim-snippets' " vim-snipmate default snippets (Previously snipmate-snippets).
@@ -48,9 +48,15 @@ Plug 'https://github.com/cstrap/python-snippets' " Python snippets for Visual St
 
 " Plugins not for vscode.
 if !exists('g:vscode')
-  Plug 'https://github.com/scrooloose/nerdtree' " A tree explorer plugin for vim.
+    Plug 'https://github.com/scrooloose/nerdtree' " A tree explorer plugin for vim.
 endif
 
+" Only if started by a browser.
+if exists('g:started_by_firenvim')
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } } " Embed Neovim in your browser.
+endif
+
+" Depending on whether vim or nvim is running.
 if has('nvim')
     Plug 'https://github.com/Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " Dark powered asynchronous unite all interfaces for Neovim/Vim8.
 else
