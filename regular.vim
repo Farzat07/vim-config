@@ -48,7 +48,9 @@ set softtabstop=-1
 set expandtab
 
 " Format files linux style.
-set fileformat=unix
+if &modifiable==1
+    set fileformat=unix
+endif
 
 " Save swap files in the same directory as the edited file.
 set directory=.,$MyVimRuntime/swap,/var/tmp
