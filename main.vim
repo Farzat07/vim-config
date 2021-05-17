@@ -7,9 +7,6 @@ source <sfile>:p:h/plugins.vim
 " Regular settings.
 source <sfile>:p:h/regular.vim
 
-" Language-specific settings and mappings.
-source <sfile>:p:h/languages.vim
-
 " Global mappings.
 source <sfile>:p:h/global-mappings.vim
 

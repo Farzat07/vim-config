@@ -58,3 +58,6 @@ set backupdir=.,$MyVimRuntime/backup,/tmp
 
 " Enable plugins to be loaded based on file type.
 filetype plugin on
+
+" Specify the python3 host program.
+let g:python3_host_prog = '/usr/bin/python3'
