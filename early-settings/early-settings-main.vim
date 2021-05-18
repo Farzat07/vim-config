@@ -1,3 +1,2 @@
-" Don't let polyglot load its sensible settings.
-" These settings interfere with the swap functionality.
-let g:polyglot_disabled = ['sensible']
+source <sfile>:p:h/polyglot.vim
+source <sfile>:p:h/ale.vim

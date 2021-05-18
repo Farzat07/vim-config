@@ -10,5 +10,7 @@
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "hover.target": "echo",
   "snippets.ultisnips.enable": false,
-  "coc.source.ultisnips.enable": true
+  "coc.source.ultisnips.enable": true,
+  // Use ALE to display linting output.
+  "diagnostic.displayByAle": true
 }
