@@ -22,6 +22,15 @@ try
 catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
 endtry
 
+" Automatically starts terminal emulator in insert mode.
+autocmd TermOpen * startinsert
+tnoremap <C-h> <C-\><C-n><C-w>h
+" Workaround since <C-h> isn't working in neovim right now
+" tnoremap <C-w>h <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+
 " Coc shorcuts.
 nmap <silent> <Leader>d <Plug>(coc-definition)
 nmap <silent> <Leader>k :call CocAction('doHover')<CR>
