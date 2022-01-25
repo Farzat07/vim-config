@@ -5,12 +5,14 @@
   "python.linting.pylintUseMinimalCheckers": false,
   "python.linting.pylintArgs": ["--disable=C0330"],
   "python.linting.flake8Enabled": true,
+  "pyright.disableDiagnostics": true,
   "python.analysis.typeCheckingMode": "off",
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "hover.target": "echo",
   "snippets.ultisnips.enable": false,
   "coc.source.ultisnips.enable": true,
+  "coc.preferences.willSaveHandlerTimeout": 3000,
   // Use ALE to display linting output.
   "diagnostic.displayByAle": true
 }

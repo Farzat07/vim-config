@@ -23,7 +23,7 @@ snippet template "Basic template" b
 
 \usepackage{booktabs}  % For more professional tables.
 
-\usepackage{hyperref}  % For hyper links between references in the document.
+\usepackage{hyperref}  % For hyper links between references.
 
 \usepackage{siunitx}  % For SI unit support.
 
@@ -32,7 +32,8 @@ snippet template "Basic template" b
 \usepackage{pgfplotstable}
 
 \title{$1}
-\author{${2:Abdul Rahman Farzat\thanks\{Group C-1. ID B8TB1711. Email: a@farzat.xyz\}}}
+\author{${2:Abdul Rahman Farzat\thanks\{Group G. ID B8TB1711. Email:
+a@farzat.xyz\}}}
 \date{\today}
 
 \begin{document}
@@ -68,15 +69,13 @@ snippet fig "Figure environment" b
 \begin{figure}[${1:htbp}]
   \centering
   ${2:\includegraphics[width=${3:0.8}\textwidth]{$4}}
-  \caption{${5:$4}}%
-  \label{fig:${6:${4/\W+/-/g}}}
+  \caption{${5:$4}}\label{fig:${6:${4/\W+/-/g}}}
 \end{figure}
 endsnippet
 snippet subfig "Subfigure environment" b
 \begin{subfigure}[${1:b}]{${2:0.4}\textwidth}
   ${3:\includegraphics[width=\textwidth]{$4}}
-  \caption{${5:$4}}%
-  \label{subfig:${6:${4/\W+/-/g}}}
+  \caption{${5:$4}}\label{subfig:${6:${4/\W+/-/g}}}
 \end{subfigure}
 ${0}
 endsnippet
@@ -167,6 +166,19 @@ endsnippet
 # \end{align*}
 # endsnippet
 
+# Section
+snippet sec "Section" b
+\\section{${1:section name}}\\label{sec:${2:${1/\W+/_/g}}}
+${0}
+endsnippet
+snippet subsec "Subsection" b
+\\subsection{${1:section name}}\\label{subsec:${2:${1/\W+/_/g}}}
+${0}
+endsnippet
+snippet subsubsec "Subsubsection" b
+\\subsubsection{${1:section name}}\\label{subsubsec:${2:${1/\W+/_/g}}}
+${0}
+endsnippet
 
 context "math()"
 snippet // "Fraction" iA

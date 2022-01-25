@@ -59,5 +59,14 @@ set backupdir=.,$MyVimRuntime/backup,/tmp
 " Enable plugins to be loaded based on file type.
 filetype plugin on
 
+" Do not change the shape of the letter based on its position in the word.
+" When viewing right-to-left shape change can be very confusing.
+set noarabicshape
+
+" Set keymap to Arabic in case typing in Arabic was desired.
+" But set iminsert=0 to have English mapping at first. Switch using i_CTRL-^.
+set keymap=arabic
+set iminsert=0
+
 " Specify the python3 host program.
 let g:python3_host_prog = '/usr/bin/python3'

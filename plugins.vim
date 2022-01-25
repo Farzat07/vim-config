@@ -10,6 +10,8 @@ endif
 call plug#begin($MyVimRuntime . '/plugged')
 
 " Specifying plugins.
+Plug 'https://gitlab.com/HiPhish/info.vim.git' " Read and browse info files in Vim.
+Plug 'https://github.com/ledger/vim-ledger' " Vim plugin for Ledger.
 Plug 'https://github.com/lervag/vimtex' " A modern vim plugin for editing LaTeX files.
 Plug 'https://github.com/rhysd/vim-grammarous' " A powerful grammar checker for Vim using LanguageTool.
 Plug 'https://github.com/Yggdroot/indentLine' " A vim plugin to display the indention levels with thin vertical lines.
@@ -35,7 +37,7 @@ Plug 'https://github.com/alvan/vim-closetag' " Auto close (X)HTML tags.
 Plug 'https://github.com/dylanaraps/wal.vim' " Generate and change colorschemes on the fly.
 Plug 'https://github.com/dkprice/vim-easygrep' " Fast and Easy Find and Replace Across Multiple Files.
 Plug 'https://github.com/lambdalisue/suda.vim' " An alternative sudo.vim for Vim and Neovim, limited support sudo in Windows.
-Plug 'https://github.com/Farzat07/vim-better-whitespace', { 'branch': 'detectWhitelines' } " Better whitespace highlighting for Vim.
+Plug 'https://github.com/ntpeters/vim-better-whitespace' " Better whitespace highlighting for Vim.
 Plug 'https://github.com/heavenshell/vim-jsdoc', {
             \ 'for': ['javascript', 'javascript.jsx','typescript'],
             \ 'do': 'make install'
