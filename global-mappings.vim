@@ -12,7 +12,7 @@ endtry
 
 " Copy the last used register to the clipboard.
 try
-    command Clipboard :let @+ = getreg('"')
+    command Clipboard :call system('cclip', @")
 catch /^Vim\%((\a\+)\)\=:E174/	" Catch Command already exists error.
 endtry
 
