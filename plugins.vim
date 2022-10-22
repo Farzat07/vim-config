@@ -46,7 +46,6 @@ Plug 'https://github.com/heavenshell/vim-jsdoc', {
 Plug 'https://github.com/SirVer/ultisnips' " UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
 Plug 'https://github.com/mattn/emmet-vim' " emmet for vim: http://emmet.io/.
 Plug 'https://github.com/honza/vim-snippets' " vim-snipmate default snippets (Previously snipmate-snippets).
-Plug 'https://github.com/dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' } " Extension for Javascript/React snippets with search supporting ES7 and babel features.
 Plug 'https://github.com/cstrap/python-snippets' " Python snippets for Visual Studio Code.
 
 " Plugins not for vscode.

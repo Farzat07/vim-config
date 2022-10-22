@@ -34,6 +34,7 @@ let g:coc_global_extensions = [
             \'coc-ultisnips',
             \'coc-css',
             \'coc-html',
+            \'coc-java',
             \'coc-jedi',
             \'coc-json',
             \'coc-markdownlint',
