@@ -23,7 +23,6 @@ Plug 'https://github.com/Vimjas/vim-python-pep8-indent' " A nicer Python indenta
 Plug 'https://github.com/vim-airline/vim-airline' " Lean & mean status/tabline for vim that's light as air.
 Plug 'https://github.com/vim-airline/vim-airline-themes' " A collection of themes for vim-airline.
 Plug 'https://github.com/luukvbaal/nnn.nvim.git' " File manager for Neovim powered by nnn.
-Plug 'https://github.com/Farzat07/tmuxline.vim' " Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 Plug 'https://github.com/mhinz/vim-signify' " Show a diff using Vim its sign column.
 Plug 'https://github.com/tpope/vim-fugitive' " A Git wrapper so awesome, it should be illegal.
 Plug 'https://github.com/tpope/vim-obsession' " Continuously updated session files.
