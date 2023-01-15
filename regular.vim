@@ -68,5 +68,8 @@ set noarabicshape
 set keymap=arabic
 set iminsert=0
 
+" Disable mouse.
+set mouse=
+
 " Specify the python3 host program.
 let g:python3_host_prog = '/usr/bin/python3'
