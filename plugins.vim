@@ -12,6 +12,7 @@ call plug#begin($MyVimRuntime . '/plugged')
 " Specifying plugins.
 Plug 'https://gitlab.com/HiPhish/info.vim.git' " Read and browse info files in Vim.
 Plug 'https://github.com/ledger/vim-ledger' " Vim plugin for Ledger.
+Plug 'https://github.com/fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Go development plugin for Vim.
 Plug 'https://github.com/lervag/vimtex' " A modern vim plugin for editing LaTeX files.
 Plug 'https://github.com/rhysd/vim-grammarous' " A powerful grammar checker for Vim using LanguageTool.
 Plug 'https://github.com/Yggdroot/indentLine' " A vim plugin to display the indention levels with thin vertical lines.
