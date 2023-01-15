@@ -43,6 +43,7 @@ let g:coc_global_extensions = [
             \'coc-tsserver',
             \'coc-vimlsp',
             \'coc-vimtex',
+            \'coc-go',
             \]
 let g:markdown_fenced_languages = [
             \ 'vim',
