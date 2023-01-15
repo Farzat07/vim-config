@@ -14,5 +14,7 @@
   "coc.source.ultisnips.enable": true,
   "coc.preferences.willSaveHandlerTimeout": 3000,
   // Use ALE to display linting output.
-  "diagnostic.displayByAle": true
+  "diagnostic.displayByAle": true,
+  "diagnostic.virtualText": false,
+  "inlayHint.enable": false,
 }
