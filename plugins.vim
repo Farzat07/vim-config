@@ -42,10 +42,6 @@ Plug 'https://github.com/dylanaraps/wal.vim' " Generate and change colorschemes 
 Plug 'https://github.com/dkprice/vim-easygrep' " Fast and Easy Find and Replace Across Multiple Files.
 Plug 'https://github.com/lambdalisue/suda.vim' " An alternative sudo.vim for Vim and Neovim, limited support sudo in Windows.
 Plug 'https://github.com/ntpeters/vim-better-whitespace' " Better whitespace highlighting for Vim.
-Plug 'https://github.com/heavenshell/vim-jsdoc', {
-            \ 'for': ['javascript', 'javascript.jsx','typescript'],
-            \ 'do': 'make install'
-            \} " Generate JSDoc to your JavaScript code.
 Plug 'https://github.com/SirVer/ultisnips' " UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
 Plug 'https://github.com/mattn/emmet-vim' " emmet for vim: http://emmet.io/.
 Plug 'https://github.com/honza/vim-snippets' " vim-snipmate default snippets (Previously snipmate-snippets).
