@@ -33,6 +33,7 @@ let g:coc_global_extensions = [
             \'coc-snippets',
             \'coc-ultisnips',
             \'coc-css',
+            \'coc-clangd',
             \'coc-html',
             \'coc-java',
             \'coc-jedi',
